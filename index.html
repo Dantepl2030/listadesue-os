@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Novios</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: pink;
+      }
+      header {
+        background-color: pink;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+        background-color: lightpink;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .product-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+      .product-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .product-info {
+        padding: 15px;
+        text-align: center;
+      }
+      .product-info h3 {
+        margin: 10px 0;
+        font-size: 18px;
+      }
+      .product-info p {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0;
+      }
+      .product-info a {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 15px;
+        background-color: lightpink;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      .product-info a:hover {
+        background-color: rgb(22, 194, 36);
+      }
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: lightpink;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>OSITO POCHITO les Presenta</h1>
+      <h1>LISTA DE SUEÑOS VERSION 1.0.0</h1>
+      <p>¡Gracias por ser parte de este momento especial!</p>
+    </header>
+    <main>
+      <h2>Sueños disponibles</h2>
+      <div class="product-grid">
+        <div class="product-card">
+          <img
+            src="https://cde.3.elcomercio.pe/ima/0/1/1/7/2/1172549.jpg"
+            alt="Set de Platos"
+          />
+          <div class="product-info">
+            <h3>Sicario personalizado!!</h3>
+            <p>Incluye pasamontañas y pistola con 6 balas.</p>
+            <a href="https://ejemplo.com/platos" target="_blank">Comprar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i.pinimg.com/originals/96/7f/6d/967f6dc3475310fe0b446fee8a32bc5d.jpg"
+            alt="Robot Aspiradora"
+          />
+          <div class="product-info">
+            <h3>Robot Humanoide</h3>
+            <p>Ira a trabajar en vez de ti. disponible en el, ella y elle.</p>
+            <a
+              href="https://i.pinimg.com/originals/96/7f/6d/967f6dc3475310fe0b446fee8a32bc5d.jpg"
+              target="_blank"
+              >Comprar</a
+            >
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://s3.abcstatics.com/media/ciencia/2021/09/06/AdobeStock_58371101-kd0iouyawe-kzdE--1248x698@abc.jpg"
+            alt="Viaje a París"
+          />
+          <div class="product-info">
+            <h3>Viaje a Ganimides (luna de jupiter)</h3>
+            <p>Ayuda para nuestro viaje de ensueño.</p>
+            <a href="https://ejemplo.com/viaje" target="_blank">Aportar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://i1.sndcdn.com/artworks-yIDTLh1h2qDY1Q8w-SYeSwQ-t500x500.jpg"
+            alt="Juego de Toallas"
+          />
+          <div class="product-info">
+            <h3>Mina de diamantes</h3>
+            <p>Incluye 125 diamantes de 35 kilates y 2 negros para trabajar</p>
+            <a href="https://ejemplo.com/toallas" target="_blank">Comprar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x200" alt="Set de Platos" />
+          <div class="product-info">
+            <h3>Set de Platos</h3>
+            <p>Elegante set de cerámica blanca.</p>
+            <a href="https://ejemplo.com/platos" target="_blank">Comprar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://via.placeholder.com/250x200"
+            alt="Robot Aspiradora"
+          />
+          <div class="product-info">
+            <h3>Robot Aspiradora</h3>
+            <p>Limpieza sin esfuerzo.</p>
+            <a href="https://ejemplo.com/aspiradora" target="_blank">Comprar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="https://via.placeholder.com/250x200" alt="Viaje a París" />
+          <div class="product-info">
+            <h3>Viaje a París</h3>
+            <p>Ayuda para nuestro viaje de ensueño.</p>
+            <a href="https://ejemplo.com/viaje" target="_blank">Aportar</a>
+          </div>
+        </div>
+        <div class="product-card">
+          <img
+            src="https://via.placeholder.com/250x200"
+            alt="Juego de Toallas"
+          />
+          <div class="product-info">
+            <h3>Juego de Toallas</h3>
+            <p>Algodón de alta calidad.</p>
+            <a href="https://ejemplo.com/toallas" target="_blank">Comprar</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>¡Gracias por acompañarnos en este día tan especial! ❤️</p>
+    </footer>
+  </body>
+</html>
