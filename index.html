@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Novios</title>
+    <title>Lista de Sueños</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: pink;
+        background-image: url("https://i.pinimg.com/originals/ba/7e/38/ba7e38bd222876d66b04910f79be1577.jpg");
+        background-size: cover; /* La imagen cubre toda la pantalla */
+        background-repeat: no-repeat; /* Evita que se repita */
+        background-position: center; /* Centra la imagen */
+        color: white; /* Asegura que el texto sea legible sobre el fondo */
       }
       header {
-        background-color: pink;
+        background-color: rgba(255, 192, 203, 0.8); /* Fondo semitransparente */
         color: white;
         padding: 20px;
         text-align: center;
@@ -21,11 +25,18 @@
         padding: 20px;
         max-width: 1200px;
         margin: auto;
-        background-color: lightpink;
+        background-color: rgba(255, 192, 203, 0.8); /* Fondo semitransparente */
+        border-radius: 10px;
       }
       h1,
-      h2 {
+      h2,
+      p {
         text-align: center;
+        color: black;
+      }
+
+      h3 {
+        color: black;
       }
       .product-grid {
         display: grid;
@@ -33,7 +44,7 @@
         gap: 20px;
       }
       .product-card {
-        background: white;
+        background: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         overflow: hidden;
@@ -57,7 +68,7 @@
       }
       .product-info p {
         font-size: 14px;
-        color: #666;
+        color: #333;
         margin: 10px 0;
       }
       .product-info a {
@@ -77,7 +88,7 @@
         text-align: center;
         padding: 20px;
         margin-top: 20px;
-        background-color: lightpink;
+        background-color: rgba(255, 192, 203, 0.8); /* Fondo semitransparente */
         color: white;
       }
     </style>
@@ -89,7 +100,7 @@
       <p>¡Gracias por ser parte de este momento especial!</p>
     </header>
     <main>
-      <h2>Sueños disponibles</h2>
+      <h2>SUEÑOS DISPONIBLES</h2>
       <div class="product-grid">
         <div class="product-card">
           <img
@@ -99,6 +110,7 @@
           <div class="product-info">
             <h3>Sicario personalizado!!</h3>
             <p>Incluye pasamontañas y pistola con 6 balas.</p>
+            <p>Precio: $60.000.-</p>
             <a href="https://ejemplo.com/platos" target="_blank">Comprar</a>
           </div>
         </div>
@@ -110,6 +122,7 @@
           <div class="product-info">
             <h3>Robot Humanoide</h3>
             <p>Ira a trabajar en vez de ti. disponible en el, ella y elle.</p>
+            <p>Precio: $75.000.-</p>
             <a
               href="https://i.pinimg.com/originals/96/7f/6d/967f6dc3475310fe0b446fee8a32bc5d.jpg"
               target="_blank"
@@ -125,7 +138,8 @@
           <div class="product-info">
             <h3>Viaje a Ganimides (luna de jupiter)</h3>
             <p>Ayuda para nuestro viaje de ensueño.</p>
-            <a href="https://ejemplo.com/viaje" target="_blank">Aportar</a>
+            <p>Precio: $80.000.-</p>
+            <a href="https://ejemplo.com/viaje" target="_blank">Comprar</a>
           </div>
         </div>
         <div class="product-card">
@@ -136,6 +150,7 @@
           <div class="product-info">
             <h3>Mina de diamantes</h3>
             <p>Incluye 125 diamantes de 35 kilates y 2 negros para trabajar</p>
+            <p>Precio: $95.000.-</p>
             <a href="https://ejemplo.com/toallas" target="_blank">Comprar</a>
           </div>
         </div>
@@ -184,3 +199,4 @@
     </footer>
   </body>
 </html>
+
